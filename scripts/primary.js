@@ -1,7 +1,8 @@
-const data = await fetch("../data/content.json");
-const dataJson = await data.json();
-const header = await fetch('../templates/header.hbs');
-const headerTemplate = await header.text();
-const compiledHeaderTemplate = Handlebars.compile(headerTemplate);
+import {fetchFile} from "./helpers/fetch.js";
 
-document.body.innerHTML = compiledHeaderTemplate(dataJson);
+const data = await fetchFile("../data/content.json");
+const header = await fetchFile("../templates/header.hbs", "text")
+
+const compiledHeaderTemplate = Handlebars.compile(header);
+
+document.body.innerHTML = compiledHeaderTemplate(data);
