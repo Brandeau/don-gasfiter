@@ -1,8 +1,7 @@
-import { CustomHeader } from "./header.js";
+const data = await fetch("../data/content.json");
+const dataJson = await data.json();
+const header = await fetch('../templates/header.hbs');
+const headerTemplate = await header.text();
+const compiledHeaderTemplate = Handlebars.compile(headerTemplate);
 
-customElements.define('custom-header', CustomHeader);
-
-const myHeader = new CustomHeader();
-const main = document.getElementsByTagName('main')[0];
-// Append the instance to the body
-main.appendChild(myHeader);
+document.body.innerHTML = compiledHeaderTemplate(dataJson);
