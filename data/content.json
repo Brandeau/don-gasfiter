@@ -1,7 +1,24 @@
 {
-    "header": {
-        "imgSource": "../media/logo-white.png",
-        "altText": "Don Gasfiter logo",
-        "phoneNumber": "+56 9 8733 1524"
-    }
+    "links": [
+        {
+        "name": "Eliminación de sarro",
+        "href" : "/"
+        }, 
+        {
+        "name": "Destape de alcantarillado",
+        "href": "/"
+        },
+        {
+        "name": "Instalación de calefont",
+        "href": "/"
+        },
+        {
+        "name": "Conversión de cocina",
+        "href": "/"
+        },
+        {
+        "name": "Instalación de griferías",
+        "href": "/"
+        }
+    ]   
 }
