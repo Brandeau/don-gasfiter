@@ -20,5 +20,47 @@
         "name": "Instalación de griferías",
         "href": "/"
         }
-    ]   
+    ],
+    
+    "home": "Bienvenido al sitio web ddongasfiter en Chile, donde ofrecemos servicios de gasfitería confiables y de alta calidad en todo Santiago. Somos expertos en destape de cañerías con sarro y aumento de caudal de agua caliente, así como en destape de alcantarillado y desagüe con maquinaria de alta tecnología. También ofrecemos servicios de mantenimiento de calefont y asesoría en instalaciones y dispositivos anticalcáreos para el mejor funcionamiento de los caudales de agua, instalación de griferías y consejos de instalación de artefactos sanitarios, y conversión de artefactos de cocina de gas natural y licuado. Como gasfiter SEC en Huechuraba, estamos comprometidos a brindar un servicio excepcional a nuestros clientes. Nos enorgullece ofrecer soluciones efectivas y de larga duración para todo tipo de problemas de gasfitería, y nuestro equipo altamente capacitado está siempre listo para ayudarlo con sus necesidades. Si está buscando servicios de gasfitería confiables y de calidad, no dude en contactarnos. ¡Estamos aquí para ayudarlo!",
+
+    "sarro": [
+        "«El destape de cañerías es un procedimiento altamente efectivo para combatir la acumulación de carbonato de calcio y magnesio, conocida como sarro, en los conductos de agua caliente. Utilizando una tecnología avanzada y un enfoque desmineralizador, este proceso disuelve de manera efectiva estas incrustaciones y las convierte en oxígeno. Como resultado, la dura costra de sarro desaparece por completo, permitiendo una restauración óptima de la presión del agua caliente en el sistema.",
+
+        "En nuestra empresa, nos enorgullece ofrecer un servicio de destape de cañerías que garantiza un éxito absoluto. Nuestra tecnología desmineralizante de vanguardia, combinada con un potente producto que  desincrusta no tóxico, proporciona resultados excepcionales. Además de mejorar la presión del agua caliente, este tratamiento también contribuye a prolongar la vida útil de las tuberías y evita problemas futuros de obstrucciones y averías.",
+
+        "Nuestro proceso de destape de cañerías se realiza en la red de agua caliente, donde se acumulan las incrustaciones de sarro más persistentes. Aprovechando una combinación de experiencia y tecnología de punta, nuestros expertos realizan el tratamiento de manera eficiente y precisa, garantizando una duración de 60 a 90 minutos que permitirá disfrutar de un sistema de agua caliente renovado y eficiente.",
+
+        "Además de brindar una solución efectiva para el sarro, nuestro servicio está diseñado para ser amigable con el medio ambiente. El uso de un producto desincrustante no tóxico minimiza el impacto ambiental sin comprometer la calidad de los resultados obtenidos."
+    ],
+
+    "alcantarillado": [
+        "En Dongasfiter, somos expertos en destape de alcantarillado y nos enorgullece decir que podemos destapar donde otros no pueden. Nuestros socios colaboradores en destapa.cl comparten nuestro lema y nos respaldan en la resolución de problemas difíciles en cámaras de alcantarillado, desagües de lavaplatos tapados por grasas y tinas obstruidas. Además, contamos con maquinarias eléctricas de última generación de origen alemán, disponibles para brindar soluciones eficientes. ¡Confíe en nuestra experiencia y equipo para resolver sus necesidades de destape de alcantarillado! Llámenos ahora y descubra por qué llevamos 20 años siendo líderes en el sector.",
+
+        "El primer enemigo que es muy recurrente es la raíz de algún árbol (ojo con las palmeras son de lo peor) recuerda ponerlos lejos de las líneas de las cámaras, por esto debes tener presente la salud del alcantarillado. El segundo enemigo, digamos en plural, son las toallas húmedas y ni hablar de las toallas higiénicas, que no se disuelven, que con el agua se ponen densas y que tapan mucho, ¡así que no las tires a tu baño!",
+
+        "Servicios de destapes de alcantarillado, destape de tina, destape lavaplatos, destape de desagües y destape cañerías, aumento de caudal de agua caliente, atendemos en todas las comunas de Santiago, no dude en llamarnos."
+    ],
+
+    "calefont": {
+          "instalación": "Nuestro servicio de instalación, se realiza a través de un equipo técnico altamente calificado, que cumple con un riguroso programa de capacitación en materias de seguridad, tecnología y normativas. Somos un equipo de gasfiter autorizado SEC, con esto obtiene el respaldo para la garantía que da el fabricante de calefont y la seguridad que su calefont fue instalado bajo las normas de seguridad correspondientes.",
+        
+          "mantención": "Mantención de calefont, La mantención de calefont consiste en: limpieza de componentes eléctricos, lubricación interna, limpieza de quemadores, cambio de membrana en válvula de agua, entre otros detalles. Obtenemos cualquier repuesto necesario para la mantención de calefont, algunos de los cuales se deben cambiar en cada mantención, como por ejemplo: Membrana, empaquetaduras,  y otros."
+    },
+
+    "cocina": "Hola gusto de que esté aquí, en primer lugar, queremos que sepa que estamos capacitados, por lo tanto, listos para dar solución a su requerimiento de conversión de cocina, además, para realizar instalación de cocinas y cocinas encimeras, por último, instalar reguladores y flexibles de gas. En el mercado, existen dos tipos de gas más requeridos comercialmente, en primer lugar, el gas licuado, que se vende en cilindros de 5,11,15,45. Por consiguiente, se piden a domicilio en depósitos mayores, también, se distribuye por cañerías en residencias, además, este es un gas, con mayor poder calorífico, por lo tanto, más concentrado. Un dato extra, el orificio de los inyectores, por donde pasa el gas, es diminuto, y por ultimo, la regulación de aire para la mezcla de la combustión, es un factor determinante. Convertimos, la mayoría de Marcas del comercio. No dude en llamarnos o consulte a nuestro WhatsApp. Muchas gracias, somos su Equipo técnico de siempre, somos Dongasfiter.",
+
+    "griferías": [
+        "Instalador de griferías y de sanitarios, de todas las marcas y modelos del mercado.",
+
+        "Cambio de llaves de Lavaplatos, griferías de Tina y ducha."
+    ],
+
+    "comunas": ["Quilicura", "Chicureo", "Huechuraba", "Peñalolén", "Pudahuel", "Vitacura", "Ñuñoa", "Providencia", "La Reina", "Macul", "Las Condes", "La Florida", "Cerrillos", "Maipú", "Calera de Tango", "San Miguel", "Lo Barnechea"],
+
+    "contacto": {
+        "teléfono": "56987331524",
+        "Facebook": "https://es-la.facebook.com/dongasfiter"
+    }
+    
 }
