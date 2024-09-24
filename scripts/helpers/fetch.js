@@ -8,3 +8,4 @@ async function fetchFile(path, returnFormat = "json"){
     return await returnFormat === "text"? response.text() : response.json()
 }
 
+export {fetchFile}
