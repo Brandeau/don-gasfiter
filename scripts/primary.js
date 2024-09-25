@@ -9,20 +9,21 @@ const main = document.querySelector('main');
 const section = await fetchFile("../templates/section.hbs", "text");
 const compiledSection = Handlebars.compile(section);
 
-function renderPath(pathname){
-    if(pathname === '/index.html'){
-        main.innerHTML = compiledSection(data.home);
-    }else if(pathname === '/html/sarro.html'){
+function handleListItemClick(){
+    if(event.target.id === 'sarro'){
         main.innerHTML = compiledSection(data.sarro)
-    }else if(pathname === '/html/alcantarillado.html'){
+    }else if(event.target.id === 'alcantarillado'){
         main.innerHTML = compiledSection(data.alcantarillado)
-    }else if(pathname === '/html/calefont.html'){
+    }else if(event.target.id === 'calefont'){
         main.innerHTML = compiledSection(data.calefont)
-    }else if(pathname === '/html/cocina.html'){
+    }else if(event.target.id === 'cocina'){
         main.innerHTML = compiledSection(data.cocina)
-    }else if(pathname === '/html/griferias.html'){
+    }else if(event.target.id === 'griferias'){
         main.innerHTML = compiledSection(data.griferias)
     }
 }
 
-renderPath(location.pathname);
+const navLinks = document.querySelector("nav ul")
+navLinks.addEventListener("click", handleListItemClick);
+
+main.innerHTML = compiledSection(data.home)
