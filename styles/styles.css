@@ -4,8 +4,16 @@ body {
     flex-direction: column;
 }
 
+#skip-button {
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color:#2d396d;
+}
+
 header {
-    background-color: rgb(14, 153, 212);
+    /*background-color: rgb(14, 153, 212);*/
+    background-color: #2d396d;
     display: flex;
     height: 100px;
     padding: 10px;
@@ -24,7 +32,8 @@ header {
 }
 
 nav {
-    background-color: rgb(207, 59, 0);
+    /*background-color: rgb(207, 59, 0);*/
+    background-color: #ab2326;
 }
 
 nav ul{
@@ -39,7 +48,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 13px;
+    font-size: 0.8em;
     font-weight: bold;
     
 }
@@ -48,8 +57,12 @@ nav ul li a:hover {
     text-decoration: none;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+main img {
+    width: -webkit-fill-available;
 }
 
 section {
@@ -60,7 +73,7 @@ section {
 }
 
 section h1 {
-    color: rgb(14, 153, 212);;
+    color: #2d396d;
 }
 
 section ul {
@@ -70,7 +83,7 @@ section ul {
 }
 
 footer {
-    background-color: rgb(14, 153, 212);
+    background-color: #2d396d;
     display: flex;
     height: 100px;
     padding: 10px;
@@ -78,7 +91,7 @@ footer {
     text-align: center;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 12px;
+    font-size: 0.7em;
     
 }
 
@@ -87,7 +100,7 @@ footer p {
 }
 
 footer small {
-    padding: 10px;
+    padding: 0.5em;
 }
 
 @media (min-width: 601px) {

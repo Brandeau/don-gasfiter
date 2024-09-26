@@ -7,16 +7,17 @@
     <title>Don Gasfiter</title>
 </head>
 <body>
-    <a href="#maincontent" id="skip-button">skip to main content</a>
+    <a href="#maincontent" id="skip-button">ir al contenido</a>
     <header>
         <a href="/index.html">
             <img src="../media/logo-white.png" id="logo" alt="Don Gasfiter logo">
         </a>
-        <input type="search">
+        <label for="search">Busca en la página</label>
+        <input type="search" id="search" placeholder="calefont">
         <a id="phone">+56 9 8733 1524</a>
     </header>
     <nav aria-labelledby="mainmenulabel"></nav>
-    <main id="maincontent">
+    <main id="maincontent" aria-live="polite">
     </main>
     <footer>
         <p>Servicios destapes  de cañerías con sarro, aumento de caudal de agua caliente. Atendemos en todas las comunas de Santiago, no dude en llamarnos.</p>
