@@ -1,6 +1,6 @@
 {{#if image}}
 {{#with image}}
-<img src="{{imgSrc}}" id="{{id}}">
+<img src="{{imgSrc}}" id="{{id}}" alt="{{alt}}">
 {{/with}}
 {{/if}}
 <section>
@@ -11,3 +11,9 @@
     </ul>
     {{/each}}
 </section>
+{{#if video}}
+{{#with video}}
+<iframe width="auto" src="{{source}}" title="{{description}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;   
+ web-share" allowfullscreen></iframe>
+{{/with}}
+{{/if}}
