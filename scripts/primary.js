@@ -1,5 +1,25 @@
 import {fetchFile} from "./helpers/fetch.js";
 
+/*Partials section */
+const imagePartial = await fetchFile("./templates/partials/image.hbs", "text");
+const paragraphPartial = await fetchFile("./templates//partials/paragraph.hbs", "text");
+const listPartial = await fetchFile("./templates/partials/list.hbs", "text");
+const videoPartial = await fetchFile("./templates/partials/video.hbs", "text");
+const buttonPartial = await fetchFile("./templates/partials/button.hbs", "text");
+
+
+Handlebars.registerPartial(
+    {
+        imageTemplate: imagePartial,
+        paragraphTemplate: paragraphPartial,
+        listTemplate: listPartial,
+        videoTemplate: videoPartial,
+        buttonTemplate: buttonPartial
+    }
+)
+
+/*Business logic*/
+
 const data = await fetchFile("../data/content.json");
 const linkList = await fetchFile("../templates/linkList.hbs", "text")
 const compiledlinkList = Handlebars.compile(linkList);

@@ -1,19 +1,16 @@
-{{#if image}}
-{{#with image}}
-<img src="{{imgSrc}}" id="{{id}}" alt="{{alt}}">
-{{/with}}
-{{/if}}
+{{> imageTemplate}}
 <section>
-    <h1>{{name}}</h1>
-    {{#each paragraphs}}
+    <h1>{{h1}}</h1>
     <ul>
-        <li>{{this}}</li>
-    </ul>
+    {{#each subsection}}
+        <li>
+            <h2>{{h2}}</h2>
+            {{> imageTemplate}}
+            {{> paragraphTemplate}}
+            {{> buttonTemplate}}
+            {{> videoTemplate}}
+        </li>
     {{/each}}
+    </ul>
 </section>
-{{#if video}}
-{{#with video}}
-<iframe width="auto" src="{{source}}" title="{{description}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;   
- web-share" allowfullscreen></iframe>
-{{/with}}
-{{/if}}
+{{> videoTemplate}}
