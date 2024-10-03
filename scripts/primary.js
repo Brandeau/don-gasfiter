@@ -16,8 +16,9 @@ async function registerPartials(){
 async function renderNavbar(data){
     const linkList = await fetchFile("../templates/linkList.hbs", "text")
     const compiledlinkList = Handlebars.compile(linkList);
-    const navbar = document.querySelector("nav");
+    const navbar = document.getElementById("nav-links");
     navbar.innerHTML = compiledlinkList(data.links);
+
 }
 
 async function renderSections(data){
@@ -27,6 +28,20 @@ async function renderSections(data){
     const navLinks = document.querySelector("nav ul")
     navLinks.addEventListener("click", handle);   
     
+}
+
+function burgerIconHandler(){
+    const burgerIcon = document.getElementById("burger-icon");
+    const navLinks = document.getElementById("nav-links");
+
+    burgerIcon.addEventListener("click", () => {
+        
+        if(window.getComputedStyle(navLinks).display === "none"){
+            navLinks.style.display = "block";
+        }else if(window.getComputedStyle(navLinks).display=== "block"){
+            navLinks.style.display = "none";
+        }
+    })
 }
 
 async function handleListItemClick(data, event){
@@ -63,6 +78,7 @@ async function renderApp(){
     await renderNavbar(data);
     await renderHome(data);
     await renderSections(data)
+    burgerIconHandler();
 }
 
 renderApp();
