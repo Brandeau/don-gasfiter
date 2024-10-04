@@ -16,9 +16,11 @@
         <input type="search" id="search" placeholder="calefont">
         <a id="phone">+56 9 8733 1524</a>
     </header>
-    <nav aria-labelledby="mainmenulabel">
-        <img src="../media/menu-burger.png" id="burger-icon"></a>
-        <div id="nav-links"></div>
+    <nav role="navigation" aria-labelledby="mainmenulabel">
+        <button id="burger-icon" aria-expanded="true">
+            <img src="../media/pipe-icon.svg" aria-hidden="true" focusable="false"></img>
+        </button>
+        <ul id="nav-links"></ul>
     </nav>
     <main id="maincontent" aria-live="polite">
     </main>

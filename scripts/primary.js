@@ -37,10 +37,14 @@ function burgerIconHandler(){
     burgerIcon.addEventListener("click", () => {
         
         if(window.getComputedStyle(navLinks).display === "none"){
-            navLinks.style.display = "block";
-        }else if(window.getComputedStyle(navLinks).display=== "block"){
+            navLinks.style.display = "flex";
+            burgerIcon.style.transform = 'rotate(90deg)';
+
+        }else if(window.getComputedStyle(navLinks).display=== "flex"){
             navLinks.style.display = "none";
+            burgerIcon.style.transform = 'rotate(0deg)'
         }
+        
     })
 }
 
