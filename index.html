@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Don Gasfiter</title>
-    <style>
-        body{
-            margin: 0;
-        }
-       
-    </style>
 </head>
 <body>
-    <main></main>
+    <a href="#maincontent" id="skip-button">ir al contenido</a>
+    <header>
+        <a href id="main-logo">
+            <img src="../media/logo-white.png" id="logo" alt="Don Gasfiter logo">
+        </a>
+        <label for="search">Busca en la página</label>
+        <input type="search" id="search" placeholder="calefont">
+        <a id="phone">+56 9 8733 1524</a>
+    </header>
+    <nav role="navigation" aria-labelledby="mainmenulabel">
+        <button id="burger-icon" aria-expanded="true">
+            <img src="../media/pipe-icon.svg" aria-hidden="true" focusable="false"></img>
+        </button>
+        <ul id="nav-links"></ul>
+    </nav>
+    <main id="maincontent" aria-live="polite">
+    </main>
+    <footer>
+        <p>Servicios destapes  de cañerías con sarro, aumento de caudal de agua caliente. Atendemos en todas las comunas de Santiago, no dude en llamarnos.</p>
+        <small id="copyright-info">Copyright © 2009 – 2022 Todos los Derechos Reservados.</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script type="module" src="/scripts/primary.js"></script>
 </body>
 </html>
