@@ -1,16 +1,18 @@
-{{> imageTemplate}}
 <section>
     <h1>{{h1}}</h1>
     <ul>
     {{#each subsection}}
-        <li>
+        <li style="{{this.backgroundColor}}" style="{{this.color}}">
+            {{#if h2}}
             <h2>{{h2}}</h2>
-            {{> imageTemplate}}
-            {{> paragraphTemplate}}
-            {{> buttonTemplate}}
-            {{> videoTemplate}}
+            {{/if}}
+            <div class="subsubsection">
+                {{> imagePartial}}
+                {{> paragraphPartial}}
+            </div>
+            {{> buttonPartial}}
+            {{> videoPartial}}
         </li>
     {{/each}}
     </ul>
 </section>
-{{> videoTemplate}}

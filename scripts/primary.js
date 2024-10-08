@@ -13,11 +13,26 @@ async function registerPartials(){
     )
 }
 
+async function registerHelpers(){
+    Handlebars.registerHelper('boldWords', function(text, wordsToBold) {
+        const re = /(?=[\s.,:;]|(?<=[\s.,;:]))/;
+        const words = text.split(re);
+        const boldWords = words.map(word => {
+          if (wordsToBold.includes(word)) {
+            return `<strong>${word}</strong>`;
+          }
+          return word;
+        });
+        return boldWords.join('');
+      });
+}
+
 async function renderNavbar(data){
     const linkList = await fetchFile("../templates/linkList.hbs", "text")
     const compiledlinkList = Handlebars.compile(linkList);
     const navbar = document.getElementById("nav-links");
     navbar.innerHTML = compiledlinkList(data.links);
+
 
 }
 
@@ -79,6 +94,7 @@ async function renderApp(){
     const data = await fetchFile("../data/content.json");
 
     await registerPartials();
+    await registerHelpers();
     await renderNavbar(data);
     await renderHome(data);
     await renderSections(data)
