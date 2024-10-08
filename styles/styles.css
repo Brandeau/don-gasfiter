@@ -21,6 +21,10 @@ header {
     align-items: center;
 }
 
+header label{
+    color: #FFFFFF;
+}
+
 #logo {
     width: 5em;
 }
@@ -62,14 +66,10 @@ nav ul{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-inline-start: 0;
-       
-}
-
-nav ul{
+    padding: 0 10px;
     display: none;
-}
 
+}
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -89,6 +89,7 @@ nav ul li a:hover {
 
 main img {
     width: -webkit-fill-available;
+    max-height: 250px;
 }
 
 section {
@@ -185,6 +186,7 @@ footer small {
 }
 
 @media (min-width: 601px) {
+
     header{
         flex-direction: row;
         justify-content: space-between;
@@ -193,6 +195,8 @@ footer small {
     .subsubsection {
         display: flex;
         flex-direction: row;
+        padding: 50px;
+        font-size: 1.2em;
     }
 
     main img {
